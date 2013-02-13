@@ -1,0 +1,135 @@
+body
+{background-color: #f7f7f7;} /*003333 009999*/
+
+.logo-container
+{position: relative;
+margin: 120px auto 0 auto;
+width: 300px; height: 300px;}
+
+.logo
+{position: absolute;
+width: 300px; height: 300px;
+background-image: url(../img/rp.svg);
+background-size: 256px 256px;
+background-repeat: no-repeat;}
+
+.center
+{text-align: center;}
+
+p > .rcolor
+{font-size: 75px;
+font-weight: bold;
+color: #003333}
+
+p > .pcolor
+{font-size: 75px;
+font-weight: bold;
+color: #009999}
+
+#toTop
+{display: none;
+text-decoration: none;
+position: fixed;
+bottom: 10px;
+right: 10px;
+overflow: hidden;
+width: 51px;
+height: 51px;
+border: none;
+text-indent: -999px;
+background: url(../img/ui.totop.png) no-repeat left top;}
+
+#toTopHover
+{background: url(../img/ui.totop.png) no-repeat left -51px;
+width: 51px;
+height: 51px;
+display: block;
+overflow: hidden;
+float: left;
+opacity: 0;
+-moz-opacity: 0;
+filter: alpha(opacity=0);}
+
+#toTop:active, #toTop:focus
+{outline: none;}
+
+.pentagon-right, .pentagon-left
+{position: absolute;
+z-index: -1;
+margin-top: 100px;
+font-size: 285px;}
+
+.pentagon-right
+{color: #e3e3e3;
+animation: moveright 12s infinite linear;
+-webkit-animation: moveright 12s infinite linear;
+-o-animation: moveright 12s infinite linear;
+-moz-animation: moveright 12s infinite linear;}
+.pentagon-left
+{color: #d2d2d2;
+animation: moveleft 6s infinite linear;
+-webkit-animation: moveleft 6s infinite linear;
+-o-animation: moveleft 6s infinite linear;
+-moz-animation: moveleft 6s infinite linear;}
+
+.char-small-right
+{color: #000000;
+animation: moveright 3s infinite linear;
+-webkit-animation: moveright 3s infinite linear;
+-o-animation: moveright 3s infinite linear;
+-moz-animation: moveright 3s infinite linear;}
+.char-small-left
+{color: #000000;
+animation: moveleft 3s infinite linear;
+-webkit-animation: moveleft 3s infinite linear;
+-o-animation: moveleft 3s infinite linear;
+-moz-animation: moveleft 3s infinite linear;}
+
+@keyframes moveright
+{
+	100% { transform: rotate(360deg); }
+}
+@-webkit-keyframes moveright
+{
+	100% { -webkit-transform: rotate(360deg); }
+}
+@-o-keyframes moveright
+{
+	100% { -o-transform: rotate(360deg); }
+}
+@-moz-keyframes moveright
+{
+	100% { -moz-transform: rotate(360deg); }
+}
+
+@keyframes moveleft
+{
+	100% { transform: rotate(-360deg); }
+}
+@-webkit-keyframes moveleft
+{
+	100% { -webkit-transform: rotate(-360deg); }
+}
+@-o-keyframes moveleft
+{
+	100% { -o-transform: rotate(-360deg); }
+}
+@-moz-keyframes moveleft
+{
+	100% { -moz-transform: rotate(-360deg); }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) { }
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { }
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { .imagem { display: none } }
+
+/* iPhone 5 or iPod Touch 5th generation */
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) { }
+
+/* Landscape phones and down */
+@media (max-width: 480px) { }
