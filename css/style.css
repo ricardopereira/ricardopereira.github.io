@@ -26,6 +26,12 @@ p > .pcolor
 font-weight: bold;
 color: #009999}
 
+#navbar-top
+{box-shadow: 0 -2px 15px 2px RGBA(0,0,0,2);
+-webkit-box-shadow: 0 -2px 15px 2px RGBA(0,0,0,2);
+-o-box-shadow: 0 -2px 15px 2px RGBA(0,0,0,2);
+-moz-box-shadow: 0 -2px 15px 2px RGBA(0,0,0,2);}
+
 #toTop
 {display: none;
 text-decoration: none;
@@ -47,6 +53,8 @@ display: block;
 overflow: hidden;
 float: left;
 opacity: 0;
+-webkit-opacity: 0;
+-o-opacity: 0;
 -moz-opacity: 0;
 filter: alpha(opacity=0);}
 
