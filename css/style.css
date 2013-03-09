@@ -16,6 +16,9 @@ background-repeat: no-repeat;}
 .center
 {text-align: center;}
 
+.rcolor, .pcolor
+{line-height: 50px;}
+
 p > .rcolor
 {font-size: 75px;
 font-weight: bold;
