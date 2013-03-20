@@ -45,7 +45,7 @@ jQuery(document).ready(function ($) {
         var logoAnchor = $('#logo-anchor').offset().top;
          
         // ToDo: AddClass, RemoveClass
-        if ($(this).scrollTop()+118 >= logoAnchor)
+        if ($(this).scrollTop()+120 >= logoAnchor)
         {   
             $('#logo').css({
                 'position': 'fixed',
