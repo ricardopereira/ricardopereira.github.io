@@ -18,17 +18,17 @@ jQuery(document).ready(function ($) {
     slide.waypoint(function (event, direction) {
 
         //cache the variable of the data-slide attribute associated with each slide
-        dataslide = $(this).attr('data-slide');
+        dataslide = $(this).attr('data-slider');
 
         //If the user scrolls up change the navigation link that has the same data-slide attribute as the slide to active and 
         //remove the active class from the previous navigation link 
         if (direction === 'down') {
-            $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
+            $('.navigation li[data-slider="' + dataslide + '"]').addClass('active').prev().removeClass('active');
         }
         // else If the user scrolls down change the navigation link that has the same data-slide attribute as the slide to active and 
         //remove the active class from the next navigation link 
         else {
-            $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').next().removeClass('active');
+            $('.navigation li[data-slider="' + dataslide + '"]').addClass('active').next().removeClass('active');
         }
 
     });
@@ -37,8 +37,8 @@ jQuery(document).ready(function ($) {
     //from navigation link slide 2 and adds it to navigation link slide 1. 
     mywindow.scroll(function () {
         if (mywindow.scrollTop() == 0) {
-            $('.navigation li[data-slide="1"]').addClass('active');
-            $('.navigation li[data-slide="2"]').removeClass('active');
+            $('.navigation li[data-slider="1"]').addClass('active');
+            $('.navigation li[data-slider="2"]').removeClass('active');
         }
         
         // Get the position of the location where the scroller starts.        
@@ -65,30 +65,33 @@ jQuery(document).ready(function ($) {
     //easing plugin is also used, so we passed in the easing method of 'easeInOutQuint' which is available throught the plugin.
     function goToByScroll(dataslide) {
         htmlbody.animate({
-            scrollTop: $('.slidepanel[data-slide="' + dataslide + '"]').offset().top
+            scrollTop: $('.slidepanel[data-slider="' + dataslide + '"]').offset().top
         }, 1000, 'easeInOutQuint');
     }
 
     //When the user clicks on the navigation links, get the data-slide attribute value of the link and pass that variable to the goToByScroll function
     links.click(function (e) {
         e.preventDefault();
-        dataslide = $(this).attr('data-slide');
+        dataslide = $(this).attr('data-slider');
         goToByScroll(dataslide);
     });
 
     //When the user clicks on the button, get the get the data-slide attribute value of the button and pass that variable to the goToByScroll function
     next.click(function (e) {
         e.preventDefault();
-        dataslide = $(this).attr('data-slide');
+        dataslide = $(this).attr('data-slider');
         goToByScroll(dataslide);
 
     });
     
     prev.click(function (e) {
         e.preventDefault();
-        dataslide = $(this).attr('data-slide');
+        dataslide = $(this).attr('data-slider');
         goToByScroll(dataslide);
 
     });
+    
+    //Teste
+    $('.featurette').delay(1000).animate({'opacity': '1'}, 700);
 
 });

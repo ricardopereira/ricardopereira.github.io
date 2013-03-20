@@ -120,7 +120,8 @@ background-repeat: repeat-y;}
 .featurette
 {display: block;
 padding-top: 45%;
-overflow: hidden;}
+overflow: hidden;
+opacity: 0;}
 
 .featurette-heading
 {text-align: center;
@@ -141,7 +142,9 @@ padding-bottom: -120px;}
  SLIDE 1 
 *******************************/
 #slide1
-{background-color:#dddddd;}
+{background-color:#dddddd;
+/*background-image: url(../images/cover.jpg);*/
+background-size: cover}
 
 /******************************
  SLIDE 2 
