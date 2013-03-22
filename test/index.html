@@ -1,15 +1,13 @@
 <!DOCTYPE HTML> 
 <html>
 <head>
-<title>Swipe 2</title>
+<title>Swipe</title>
 <meta http-equiv="X-UA-Compatible" content="IE=8">
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
 <link href='style.css' rel='stylesheet'/>
 </head>
 
 <body>
-
-<h1>Swipe 2</h1>
 
 <div id='slider' class='swipe'>
   <div class='swipe-wrap'>
@@ -22,15 +20,10 @@
   </div>
 </div>
 
-<div style='text-align:center;padding-top:20px;'>
-  <button onclick='slider.prev()'>prev</button>
-  <button onclick='slider.next()'>next</button>
-</div>
-
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src='swipe.js'></script>
-<script>
 
+<script>
 // pure JS
 var elem = document.getElementById('slider');
 window.slider = Swipe(elem, {
@@ -38,8 +31,6 @@ window.slider = Swipe(elem, {
   // callback: function(index, element) {},
   // transitionEnd: function(index, element) {}
 });
-
-// with jQuery
+// pure jQuery
 // window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
-
 </script>
