@@ -1,5 +1,6 @@
 var slider = Swipe(document.getElementById('slider'),
   {
+/*
     callback: function(pos)
     {
       if (pos == 1)
@@ -7,6 +8,7 @@ var slider = Swipe(document.getElementById('slider'),
       else
         $('.contacts').show();
     }
+*/
   });
 
 $(document).ready(function() { 
