@@ -8,11 +8,12 @@
 </head>
 
 <body>
-
 <div id='slider' class='swipe'>
   <div class='swipe-wrap'>
     <div class="info">A
         <div id="logo"></div>
+        <a class="next">Next</a>
+        <a class="prev">Prev</a>
     </div>
     <div class="info">B
         <a href="https://twitter.com/rsantospereira" target="_blank">Twitter</a>
@@ -22,15 +23,5 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src='swipe.js'></script>
-
-<script>
-// pure JS
-var elem = document.getElementById('slider');
-window.slider = Swipe(elem, {
-  // startSlide: 4,
-  // callback: function(index, element) {},
-  // transitionEnd: function(index, element) {}
-});
-// pure jQuery
-// window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
-</script>
+<script src='script.js'></script>
+</body>
