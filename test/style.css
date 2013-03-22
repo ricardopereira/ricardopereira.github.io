@@ -4,28 +4,28 @@ body
 html, body, .swipe, .swipe-wrap, .swipe-wrap > div, .info
 {height: 100%;}
 
-.swipe {
-overflow: hidden;
+.swipe
+{overflow: hidden;
 visibility: hidden;
 position: absolute;
 top: 0;
 left: 0;
-width: 100%;
-}
-.swipe-wrap {
-  overflow: hidden;
-  position: relative;
-}
-.swipe-wrap > div {
-  float: left;
-  position: relative;
-}
+width: 100%;}
+
+.swipe-wrap
+{overflow: hidden;
+position: relative;}
+
+.swipe-wrap > div
+{float: left;
+position: relative;}
+
+.contacts
+{display:inherit;}
 
 .info
-{
-background-image: url(../images/cover.jpg);
-background-size: cover;
-}
+{background-image: url(../images/cover.jpg);
+background-size: cover;}
 
 #logo
 {position:absolute;

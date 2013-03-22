@@ -1,12 +1,18 @@
 var slider = Swipe(document.getElementById('slider'),
   {
-
+    callback: function(pos)
+    {
+      if (pos == 1)
+        $('.contacts').hide();
+      else
+        $('.contacts').show();
+    }
   });
 
 $(document).ready(function() { 
-$('#logo').delay(1000).fadeIn('slow');
+  $('#logo').delay(1000).fadeIn('slow');
 });
 
 $(window).load(function() {
-console.log("Window loaded");
+  console.log("Window loaded");
 });
