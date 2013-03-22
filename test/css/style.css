@@ -1,0 +1,66 @@
+/* Large desktop */
+@media (min-width: 1200px) { }
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { }
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { .imagem { display: none } }
+
+/* iPhone 5 or iPod Touch 5th generation */
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) { }
+
+/* Landscape phones and down */
+@media (max-width: 480px) { }
+
+body
+{font-family:sans-serif;}
+
+html, body, .swipe, .swipe-wrap, .swipe-wrap > div, .info
+{height:100%;
+overflow:hidden;}
+
+.swipe
+{visibility:hidden;
+position:absolute;
+top:0;
+left:0;
+width:100%;}
+
+.swipe-wrap
+{position:relative;}
+
+.swipe-wrap > div
+{float:left;
+position:relative;}
+
+.contacts
+{display:inherit;}
+
+.info
+{background-image:url(../img/cover.jpg);
+background-size:cover;}
+
+footer
+{position:absolute;
+height:50px;
+background-color: black;}
+
+#logo
+{position:absolute;
+display:none;
+top:50%;
+left:50%;
+width:256px;
+height:256px;
+background-image:url(../img/logo.svg);
+background-size:256px 256px;
+background-repeat:no-repeat;
+margin-top:-120px;
+margin-left:-126px;
+z-index:1;}
+
+.next:hover, .prev:hover
+{color:#333333;
+cursor:pointer;
+text-decoration:none;}

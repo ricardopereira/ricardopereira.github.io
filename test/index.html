@@ -1,10 +1,22 @@
 <!DOCTYPE HTML> 
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <title>Ricardo Pereira | Developer</title>
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
-<link href='style.css' rel='stylesheet'/>
+<meta name="author" content="Ricardo Pereira">
+<meta name="description" content="Ricardo Pereira, a guy that write some code">
+<meta name="keywords" content="ricardo, pereira, developer, programador">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="img/favicon.ico" rel="shortcut icon">
+<link href="img/touch-icon-iphone.png" rel="apple-touch-icon">
+<link href="img/touch-icon-ipad.png" rel="apple-touch-icon" sizes="72x72">
+<link href="img/touch-icon-iphone4.png" rel="apple-touch-icon" sizes="114x114">
+<link href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -12,24 +24,33 @@
   <div class='swipe-wrap'>
     <div class="info">A
         <div id="logo"></div>
-        <a class="next" href="#" onclick='slider.next()'>Next</a>
+        <nav class="visible-desktop">
+        <a class="next" href="" onclick='slider.next()'>Next</a>
         <a class="prev" href="#" onclick='slider.prev()'>Prev</a>
+        </nav>
     </div>
     <div class="info">B
+        <nav class="visible-desktop">
         <a class="next" href="#" onclick='slider.next()'>Next</a>
         <a class="prev" href="#" onclick='slider.prev()'>Prev</a>
+        </nav>
         <a class="contacts" href="https://twitter.com/rsantospereira" target="_blank">Twitter</a>
     </div>
     <div class="info">C
+        <nav class="visible-desktop">
         <a class="prev" href="#" onclick='slider.prev()'>Prev</a>
+        </nav>
         <a class="contacts" href="https://twitter.com/rsantospereira" target="_blank">Twitter</a>
     </div>
   </div>
 </div>
 
+<footer>Footer</footer>
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src='swipe.js'></script>
-<script src='script.js'></script>
+<script src="js/swipe.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
