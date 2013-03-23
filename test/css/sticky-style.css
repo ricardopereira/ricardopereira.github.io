@@ -23,7 +23,7 @@ height: 100%;
 margin: 0 auto -60px;}
 
 .swipe
-{position: fixed;
+{position: relative;
 visibility: hidden;
 overflow: hidden;
 z-index: 1;}

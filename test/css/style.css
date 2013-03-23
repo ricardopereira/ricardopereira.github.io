@@ -43,11 +43,13 @@ background-size:cover;}
 
 footer
 {position:absolute;
-text-align: center;
+text-align:center;
 height:30px;
+left:0;
 bottom:0;
 width:100%;
-background-color: #f5f5f5;}
+background-color: #f5f5f5;
+overflow:hidden}
 
 #logo
 {position:absolute;
