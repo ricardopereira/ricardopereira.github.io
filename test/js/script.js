@@ -10,6 +10,8 @@ var slider = Swipe(document.getElementById('slider'),
     }
 */
   });
+  
+var mslider = Swipe(document.getElementById('slider-mobile'), { });
 
 $(document).ready(function() { 
   $('#logo').delay(1000).fadeIn('slow');
