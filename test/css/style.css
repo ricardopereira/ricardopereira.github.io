@@ -28,7 +28,8 @@ left: 0;
 width: 100%;}
 
 .swipe-mobile
-{margin-top: 30px}
+{margin-top: 30px;
+top: 0;}
 
 .swipe-wrap
 {position: relative;}
