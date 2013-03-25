@@ -16,13 +16,15 @@ var mslider = Swipe(document.getElementById('slider-mobile'),
   {
     callback: function(pos) {
     
-      var i = bullets.length;
+      var i = mbullets.length;
       while (i--) {
-        bullets[i].className = ' ';
+        mbullets[i].className = ' ';
       }
-      bullets[pos].className = 'on';
+      mbullets[pos].className = 'on';
     }
   });
+
+var mbullets = document.getElementById('position-mobile').getElementsByTagName('li');
 
 $(document).ready(function() { 
   $('.logo').delay(1000).fadeIn('slow');
