@@ -64,7 +64,8 @@ background-color: #191919;}
 
 .header-mobile
 {line-height: 30px;
-height: 30px;}
+height: 30px;
+overflow: hidden;}
 
 footer
 {position: absolute;
