@@ -28,9 +28,7 @@ left: 0;
 width: 100%;}
 
 .swipe-mobile
-{margin-top: 30px;
-margin-bottom: 30px;
-top: 0;}
+{top: 0;}
 
 .swipe-wrap
 {position: relative;}
@@ -67,7 +65,8 @@ background-color: #191919;}
 .header-mobile
 {line-height: 30px;
 height: 30px;
-overflow: hidden;}
+overflow: hidden;
+z-index: -1;}
 
 footer
 {position: absolute;
