@@ -102,7 +102,7 @@ overflow: hidden;}
 background-size: cover;}
 
 .info-mobile
-{background-position: 0 -100px;}
+{background-position: -100px 0;}
 
 footer nav
 {margin-left: -26px;}
