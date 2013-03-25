@@ -1,0 +1,450 @@
+@font-face {
+	font-family: 'rpfont';
+	src:url('../font/rpfont.eot');
+	src:url('../font/rpfont.eot?#iefix') format('embedded-opentype'),
+		url('../font/rpfont.woff') format('woff'),
+		url('../font/rpfont.ttf') format('truetype'),
+		url('../font/rpfont.svg#rpfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'rpfont';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="rp-"] {
+*/
+.rp-RicardoPereira, .rp-camera, .rp-books, .rp-tag, .rp-tags, .rp-folder-open, .rp-folder, .rp-profile, .rp-file, .rp-qrcode, .rp-ticket, .rp-cart, .rp-cart-2, .rp-coin, .rp-credit, .rp-phone, .rp-phone-hang-up, .rp-address-book, .rp-envelop, .rp-location, .rp-location-2, .rp-mobile, .rp-laptop, .rp-screen, .rp-keyboard, .rp-clock, .rp-clock-2, .rp-map, .rp-map-2, .rp-compass, .rp-mobile-2, .rp-tablet, .rp-tv, .rp-cabinet, .rp-box-remove, .rp-undo, .rp-redo, .rp-users, .rp-user, .rp-user-2, .rp-users-2, .rp-cog, .rp-equalizer, .rp-settings, .rp-wrench, .rp-lock, .rp-lock-2, .rp-unlocked, .rp-bug, .rp-pie, .rp-stats, .rp-bars, .rp-bars-2, .rp-dashboard, .rp-meter2, .rp-fire, .rp-minus, .rp-plus, .rp-arrow-up-left, .rp-arrow-up, .rp-arrow-up-right, .rp-arrow-up-right-2, .rp-arrow-right, .rp-arrow-down-right, .rp-arrow-down, .rp-arrow-down-left, .rp-arrow-left, .rp-arrow-up-left-2, .rp-arrow-up-2, .rp-arrow-up-right-3, .rp-arrow-right-2, .rp-arrow-down-right-2, .rp-arrow-down-2, .rp-arrow-down-left-2, .rp-arrow-left-2, .rp-loop, .rp-arrow-up-left-3, .rp-arrow-up-3, .rp-arrow-right-3, .rp-arrow-down-right-3, .rp-arrow-down-3, .rp-arrow-down-left-3, .rp-arrow-left-3, .rp-radio-unchecked, .rp-console, .rp-google-plus, .rp-google-drive, .rp-facebook, .rp-facebook-2, .rp-facebook-3, .rp-vimeo, .rp-youtube, .rp-feed, .rp-feed-2, .rp-twitter, .rp-instagram, .rp-twitter-2, .rp-picassa, .rp-picassa-2, .rp-flickr, .rp-flickr-2, .rp-vimeo2, .rp-vimeo-2, .rp-flickr-3, .rp-flickr-4, .rp-github, .rp-github-2, .rp-github-3, .rp-wordpress, .rp-wordpress-2, .rp-joomla, .rp-blogger, .rp-blogger-2, .rp-tumblr, .rp-tumblr-2, .rp-tux, .rp-apple, .rp-android, .rp-windows, .rp-windows8, .rp-skype, .rp-linkedin, .rp-stackoverflow, .rp-paypal, .rp-html5, .rp-html5-2, .rp-css3, .rp-chrome, .rp-firefox, .rp-IE, .rp-opera, .rp-safari, .rp-radio-checked, .rp-bullhorn, .rp-box-add, .rp-newspaper, .rp-twitter-3 {
+	font-family: 'rpfont';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.rp-RicardoPereira:before {
+	content: "\e000";
+}
+.rp-camera:before {
+	content: "\e002";
+}
+.rp-books:before {
+	content: "\e005";
+}
+.rp-tag:before {
+	content: "\e00b";
+}
+.rp-tags:before {
+	content: "\e00c";
+}
+.rp-folder-open:before {
+	content: "\e00d";
+}
+.rp-folder:before {
+	content: "\e00e";
+}
+.rp-profile:before {
+	content: "\e010";
+}
+.rp-file:before {
+	content: "\e011";
+}
+.rp-qrcode:before {
+	content: "\e012";
+}
+.rp-ticket:before {
+	content: "\e013";
+}
+.rp-cart:before {
+	content: "\e014";
+}
+.rp-cart-2:before {
+	content: "\e015";
+}
+.rp-coin:before {
+	content: "\e017";
+}
+.rp-credit:before {
+	content: "\e018";
+}
+.rp-phone:before {
+	content: "\e01a";
+}
+.rp-phone-hang-up:before {
+	content: "\e01b";
+}
+.rp-address-book:before {
+	content: "\e01c";
+}
+.rp-envelop:before {
+	content: "\e01d";
+}
+.rp-location:before {
+	content: "\e01e";
+}
+.rp-location-2:before {
+	content: "\e01f";
+}
+.rp-mobile:before {
+	content: "\e020";
+}
+.rp-laptop:before {
+	content: "\e021";
+}
+.rp-screen:before {
+	content: "\e022";
+}
+.rp-keyboard:before {
+	content: "\e023";
+}
+.rp-clock:before {
+	content: "\e028";
+}
+.rp-clock-2:before {
+	content: "\e029";
+}
+.rp-map:before {
+	content: "\e02a";
+}
+.rp-map-2:before {
+	content: "\e02b";
+}
+.rp-compass:before {
+	content: "\e02c";
+}
+.rp-mobile-2:before {
+	content: "\e02d";
+}
+.rp-tablet:before {
+	content: "\e02e";
+}
+.rp-tv:before {
+	content: "\e02f";
+}
+.rp-cabinet:before {
+	content: "\e030";
+}
+.rp-box-remove:before {
+	content: "\e034";
+}
+.rp-undo:before {
+	content: "\e038";
+}
+.rp-redo:before {
+	content: "\e039";
+}
+.rp-users:before {
+	content: "\e03a";
+}
+.rp-user:before {
+	content: "\e03b";
+}
+.rp-user-2:before {
+	content: "\e03c";
+}
+.rp-users-2:before {
+	content: "\e03d";
+}
+.rp-cog:before {
+	content: "\e041";
+}
+.rp-equalizer:before {
+	content: "\e043";
+}
+.rp-settings:before {
+	content: "\e044";
+}
+.rp-wrench:before {
+	content: "\e045";
+}
+.rp-lock:before {
+	content: "\e046";
+}
+.rp-lock-2:before {
+	content: "\e047";
+}
+.rp-unlocked:before {
+	content: "\e048";
+}
+.rp-bug:before {
+	content: "\e049";
+}
+.rp-pie:before {
+	content: "\e04a";
+}
+.rp-stats:before {
+	content: "\e04b";
+}
+.rp-bars:before {
+	content: "\e04c";
+}
+.rp-bars-2:before {
+	content: "\e04d";
+}
+.rp-dashboard:before {
+	content: "\e04e";
+}
+.rp-meter2:before {
+	content: "\e04f";
+}
+.rp-fire:before {
+	content: "\e056";
+}
+.rp-minus:before {
+	content: "\e05f";
+}
+.rp-plus:before {
+	content: "\e060";
+}
+.rp-arrow-up-left:before {
+	content: "\e061";
+}
+.rp-arrow-up:before {
+	content: "\e062";
+}
+.rp-arrow-up-right:before {
+	content: "\e063";
+}
+.rp-arrow-up-right-2:before {
+	content: "\e064";
+}
+.rp-arrow-right:before {
+	content: "\e065";
+}
+.rp-arrow-down-right:before {
+	content: "\e066";
+}
+.rp-arrow-down:before {
+	content: "\e067";
+}
+.rp-arrow-down-left:before {
+	content: "\e068";
+}
+.rp-arrow-left:before {
+	content: "\e069";
+}
+.rp-arrow-up-left-2:before {
+	content: "\e06a";
+}
+.rp-arrow-up-2:before {
+	content: "\e06b";
+}
+.rp-arrow-up-right-3:before {
+	content: "\e06c";
+}
+.rp-arrow-right-2:before {
+	content: "\e06d";
+}
+.rp-arrow-down-right-2:before {
+	content: "\e06e";
+}
+.rp-arrow-down-2:before {
+	content: "\e06f";
+}
+.rp-arrow-down-left-2:before {
+	content: "\e070";
+}
+.rp-arrow-left-2:before {
+	content: "\e071";
+}
+.rp-loop:before {
+	content: "\e072";
+}
+.rp-arrow-up-left-3:before {
+	content: "\e073";
+}
+.rp-arrow-up-3:before {
+	content: "\e074";
+}
+.rp-arrow-right-3:before {
+	content: "\e075";
+}
+.rp-arrow-down-right-3:before {
+	content: "\e076";
+}
+.rp-arrow-down-3:before {
+	content: "\e077";
+}
+.rp-arrow-down-left-3:before {
+	content: "\e078";
+}
+.rp-arrow-left-3:before {
+	content: "\e079";
+}
+.rp-radio-unchecked:before {
+	content: "\e07d";
+}
+.rp-console:before {
+	content: "\e081";
+}
+.rp-google-plus:before {
+	content: "\e082";
+}
+.rp-google-drive:before {
+	content: "\e083";
+}
+.rp-facebook:before {
+	content: "\e084";
+}
+.rp-facebook-2:before {
+	content: "\e085";
+}
+.rp-facebook-3:before {
+	content: "\e086";
+}
+.rp-vimeo:before {
+	content: "\e088";
+}
+.rp-youtube:before {
+	content: "\e08a";
+}
+.rp-feed:before {
+	content: "\e08b";
+}
+.rp-feed-2:before {
+	content: "\e08c";
+}
+.rp-twitter:before {
+	content: "\e08d";
+}
+.rp-instagram:before {
+	content: "\e08e";
+}
+.rp-twitter-2:before {
+	content: "\e090";
+}
+.rp-picassa:before {
+	content: "\e091";
+}
+.rp-picassa-2:before {
+	content: "\e092";
+}
+.rp-flickr:before {
+	content: "\e093";
+}
+.rp-flickr-2:before {
+	content: "\e094";
+}
+.rp-vimeo2:before {
+	content: "\e095";
+}
+.rp-vimeo-2:before {
+	content: "\e096";
+}
+.rp-flickr-3:before {
+	content: "\e097";
+}
+.rp-flickr-4:before {
+	content: "\e098";
+}
+.rp-github:before {
+	content: "\e09b";
+}
+.rp-github-2:before {
+	content: "\e099";
+}
+.rp-github-3:before {
+	content: "\e09a";
+}
+.rp-wordpress:before {
+	content: "\e09c";
+}
+.rp-wordpress-2:before {
+	content: "\e09d";
+}
+.rp-joomla:before {
+	content: "\e09e";
+}
+.rp-blogger:before {
+	content: "\e09f";
+}
+.rp-blogger-2:before {
+	content: "\e0a0";
+}
+.rp-tumblr:before {
+	content: "\e0a1";
+}
+.rp-tumblr-2:before {
+	content: "\e0a2";
+}
+.rp-tux:before {
+	content: "\e0a3";
+}
+.rp-apple:before {
+	content: "\e0a4";
+}
+.rp-android:before {
+	content: "\e0a5";
+}
+.rp-windows:before {
+	content: "\e0a6";
+}
+.rp-windows8:before {
+	content: "\e0a7";
+}
+.rp-skype:before {
+	content: "\e0a8";
+}
+.rp-linkedin:before {
+	content: "\e0a9";
+}
+.rp-stackoverflow:before {
+	content: "\e0ad";
+}
+.rp-paypal:before {
+	content: "\e0b0";
+}
+.rp-html5:before {
+	content: "\e0b8";
+}
+.rp-html5-2:before {
+	content: "\e0b9";
+}
+.rp-css3:before {
+	content: "\e0ba";
+}
+.rp-chrome:before {
+	content: "\e0bb";
+}
+.rp-firefox:before {
+	content: "\e0bc";
+}
+.rp-IE:before {
+	content: "\e0bd";
+}
+.rp-opera:before {
+	content: "\e0be";
+}
+.rp-safari:before {
+	content: "\e0c0";
+}
+.rp-radio-checked:before {
+	content: "\e07c";
+}
+.rp-bullhorn:before {
+	content: "\e006";
+}
+.rp-box-add:before {
+	content: "\e033";
+}
+.rp-newspaper:before {
+	content: "\e001";
+}
+.rp-twitter-3:before {
+	content: "\e08f";
+}

@@ -1,17 +1,17 @@
 /* Large desktop */
-/* @media (min-width: 1200px) { } */
+@media (min-width: 1200px) { }
  
 /* Portrait tablet to landscape and desktop */
-/* @media (min-width: 768px) and (max-width: 979px) { } */
+@media (min-width: 768px) and (max-width: 979px) { }
  
 /* Landscape phone to portrait tablet */
-/* @media (max-width: 767px) { .imagem { display: none } } */
+@media (max-width: 767px) { .imagem { display: none } }
 
 /* iPhone 5 or iPod Touch 5th generation */
-/* @media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) { } */
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) { }
 
 /* Landscape phones and down */
-/* @media (max-width: 480px) { } */
+@media (max-width: 480px) { }
 
 body
 {font-family: sans-serif;}
@@ -56,7 +56,7 @@ font-weight: 700;
 font-size: 12px;
 letter-spacing: 1px;
 text-transform: uppercase;
-color: #2b2e30;
+color: #414141;
 background-color: #191919;}
 
 footer
@@ -85,6 +85,16 @@ background-image: -ms-linear-gradient(top,#1293dc,#0f6297);
 background-image: -o-linear-gradient(top,#1293dc,#0f6297);
 background-image: linear-gradient(top,#1293dc,#0f6297);}
 
+#position li
+{display: inline-block;
+width: 10px;
+height: 10px;
+border-radius: 10px;
+background: #141414;
+box-shadow: inset 0 1px 3px black,0 0 1px 1px #202020;
+margin: 0 2px;
+cursor: pointer;}
+
 .button, .button:active, .button:visited
 {color: #4c565a!important;
 border: 0;
@@ -99,16 +109,6 @@ background-image: linear-gradient(top,#252829,#1e2021);
 text-shadow: 0 -1px 0 rgba(0,0,0,.35);
 margin-bottom: 25px;}
 
-#position li
-{display: inline-block;
-width: 10px;
-height: 10px;
-border-radius: 10px;
-background: #141414;
-box-shadow: inset 0 1px 3px black,0 0 1px 1px #202020;
-margin: 0 2px;
-cursor: pointer;}
-
 .logo
 {position: absolute;
 display: none;
@@ -122,6 +122,16 @@ background-repeat: no-repeat;
 margin-top: -120px;
 margin-left: -126px;
 z-index: 1;}
+
+a.headlogo
+{font-size: 16px;}
+
+a.headlogo:link, a.headlogo:visited, a.headlogo:hover, a.headlogo:active
+{text-decoration: none;
+color: #414141;}
+
+a.headlogo:hover
+{color: #626262;}
 
 .next:hover, .prev:hover
 {color: #333333;
