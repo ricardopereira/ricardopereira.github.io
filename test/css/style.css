@@ -102,7 +102,7 @@ overflow: hidden;}
 background-size: cover;}
 
 .info-mobile
-{background-position: 120px 0;}
+{background-position: -200px 0;}
 
 footer nav
 {margin-left: -26px;}
@@ -165,15 +165,14 @@ transition: opacity 800ms cubic-bezier(0.51, 0.01, 0.37, 0.98);}
 {opacity:1}
 
 .previous-paddle
-{height: 70px;
-width: 70px;
+{height: 53px;
+width: 59px;
 left: 30px;}
 
 .next-paddle
-{height: 70px;
-width: 70px;
-right: 30px;
-margin-right: -10px;}
+{height: 53px;
+width: 59px;
+right: 30px;}
 
 .space
 {margin: 60px 100px 10px 100px}
