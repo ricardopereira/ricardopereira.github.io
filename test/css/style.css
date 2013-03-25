@@ -102,7 +102,7 @@ overflow: hidden;}
 background-size: cover;}
 
 .info-mobile
-{background-position: -100px 0;}
+{background-position: -120px 0;}
 
 footer nav
 {margin-left: -26px;}
@@ -149,8 +149,8 @@ a:link
 
 .paddle, .paddle:hover
 {position: absolute;
-top: 0;
-margin-top: 280px;
+top: 50%;
+margin-top: -35px;
 z-index: 3;
 opacity: 0.2;
 font-size: 70px;
@@ -172,7 +172,8 @@ left: 30px;}
 .next-paddle
 {height: 70px;
 width: 70px;
-right: 30px;}
+right: 30px;
+margin-right: -10px;}
 
 .space
 {margin: 60px 100px 10px 100px}
