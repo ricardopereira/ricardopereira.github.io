@@ -147,7 +147,7 @@ margin-bottom: 25px;}
 a:link
 {-webkit-tap-highlight-color: #d4eefb;}
 
-.paddle, .paddle:hover
+.paddle, .paddle:hover, .paddle:active
 {position: absolute;
 top: 50%;
 margin-top: -35px;
