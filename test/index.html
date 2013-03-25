@@ -21,63 +21,52 @@
 </head>
 
 <body>
-
+<!-- DESKTOP -->
 <header class="hidden-phone">Ricardo <a class="headlogo" href="http://ricardopereira.github.com"><i class="rp-RicardoPereira"></i></a> Pereira</header>
-
+<!-- PHONE -->
 <header class="visible-phone header-mobile">Ricardo <a class="headlogo" href="http://ricardopereira.github.com"><i class="rp-RicardoPereira"></i></a> Pereira</header>
+
+<nav class="visible-desktop">
+  <a class="paddle next-paddle" href="#" onclick='slider.next()'><i class="icon-circle-arrow-right"></i></a>
+  <a class="paddle previous-paddle" href="#" onclick='slider.prev()'><i class="icon-circle-arrow-left"></i></a>
+</nav>
 
 <div id="slider" class="hidden-phone swipe">
   <div class="swipe-wrap">
     <!-- DESKTOP A -->
-    <div class="info">A
-        <div class="logo"></div>
-
-        <nav class="visible-desktop">
-          <a class="next" href="#" onclick='slider.next()'>Next</a>
-          <a class="prev" href="#" onclick='slider.prev()'>Prev</a>
-        </nav>
+    <div class="info">
+      <div class="logo"></div>
     </div>
     <!-- DESKTOP B -->    
-    <div class="info">B
-        <div class="container-fluid">
-          <div class="row-fluid">
-            <div class="span12 center">
-              <div class="hero-unit">
-                <p>I was in time a delphi software developer for windows applications but for now on I will be a guy trying to make some difference in the mobile world.</p>
-                <p>At this time I'm building my own website with bootstrap to embrace some web concepts and then I will learn the force of iOS.</p>
-                <p>Feel free to send me some tips, startup lessons, guru mystical daemonic valuable code ;)</p>
-                <p>However, you can always contact me if you need some help to adopt delphi language. I will upload some projects that I made into my github repository to show a bit of me and how I work.</p>
-              </div>
-            </div><!--/span-->
-          </div><!--/row-->
-        </div>
-        <nav class="visible-desktop">
-          <a class="next" href="#" onclick='slider.next()'>Next</a>
-          <a class="prev" href="#" onclick='slider.prev()'>Prev</a>
-        </nav>
-        <a class="contacts" href="https://twitter.com/rsantospereira" target="_blank">Twitter</a>
+    <div class="info">
+      <div class="space container-fluid">
+        <div class="row-fluid">
+          <div class="span12 center">
+            <div class="hero-unit">
+              <p>I was in time a delphi software developer for windows applications but for now on I will be a guy trying to make some difference in the mobile world.</p>
+              <p>At this time I'm building my own website with bootstrap to embrace some web concepts and then I will learn the force of iOS.</p>
+              <p>Feel free to send me some tips, startup lessons, guru mystical daemonic valuable code ;)</p>
+              <p>However, you can always contact me if you need some help to adopt delphi language. I will upload some projects that I made into my github repository to show a bit of me and how I work.</p>
+            </div>
+          </div><!--/span-->
+        </div><!--/row-->
+      </div>
     </div>
     <!-- DESKTOP C -->
-    <div class="info">C
-        <nav class="visible-desktop">
-          <a class="next" href="#" onclick='slider.next()'>Next</a>
-          <a class="prev" href="#" onclick='slider.prev()'>Prev</a>
-        </nav>
+    <div class="info">
     </div>
-    
   </div>
 </div>
 
 <div id="slider-mobile" class="visible-phone swipe-mobile">
   <div class="swipe-wrap">
-  
     <!-- PHONE A -->
     <div class="info">
       <div class="logo"></div>
     </div>
     <!-- PHONE B -->
     <div class="info">
-      <div class="space container-fluid">
+      <div class="space-mobile container-fluid">
         <div class="row-fluid">
           <div class="span12 center">
             <div class="hero-unit">
@@ -87,15 +76,20 @@
         </div><!--/row-->
       </div>
     </div>
-    
   </div>
 </div>
 
 <footer class="credit">
-  <nav>
+  <nav class="hidden-phone">
     <ul id="position">
       <li class="on"></li>
       <li class=" "></li>
+      <li class=" "></li>
+    </ul>
+  </nav>
+  <nav class="visible-phone">
+    <ul id="position">
+      <li class="on"></li>
       <li class=" "></li>
     </ul>
   </nav>
@@ -105,6 +99,5 @@
 <script src="js/swipe.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
-
 </body>
 </html>
