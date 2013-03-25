@@ -16,19 +16,19 @@
 body
 {font-family: sans-serif;}
 
-html, body, .swipe, .swipe-wrap, .swipe-wrap > div, .info
+html, body, .swipe, .swipe-mobile, .swipe-wrap, .swipe-wrap > div, .info
 {height: 100%;
 overflow: hidden;}
 
 .swipe, .swipe-mobile
 {visibility: hidden;
 position: absolute;
-top: 52px;
+top: 50px;
 left: 0;
 width: 100%;}
 
 .swipe-mobile
-{top: 32px;}
+{top: 30px;}
 
 .swipe-wrap
 {position: relative;}
@@ -50,7 +50,7 @@ background-size: cover;}
 header, .header-mobile
 {position: absolute;
 text-align: center;
-padding-top: 17px;
+line-height: 50px;
 height: 50px;
 width: 100%;
 left: 0;
@@ -63,7 +63,8 @@ color: #414141;
 background-color: #191919;}
 
 .header-mobile
-{height: 30px;
+{line-height: 30px;
+height: 30px;
 padding-top: 5px;}
 
 footer
