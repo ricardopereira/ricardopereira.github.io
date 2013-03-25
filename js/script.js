@@ -26,8 +26,17 @@ var mslider = Swipe(document.getElementById('slider-mobile'),
 
 var mbullets = document.getElementById('position-mobile').getElementsByTagName('li');
 
+var arguments = window.location.search;
+var subpage = arguments.substring(1);
+
 $(document).ready(function() { 
   $('.logo').delay(1000).fadeIn('slow');
+  
+  if (subpage == "contacts")
+  {
+    slider.slide(1,400);
+    mslider.slide(2,400);
+  }
 });
 
 $(window).load(function() {
