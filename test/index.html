@@ -27,8 +27,8 @@
 <header class="visible-phone header-mobile">Ricardo <a class="headlogo" href="http://ricardopereira.github.com"><i class="rp-RicardoPereira"></i></a> Pereira</header>
 
 <nav class="visible-desktop">
-  <a class="paddle next-paddle" href="#" onclick='slider.next()'><i class="icon-circle-arrow-right"></i></a>
-  <a class="paddle previous-paddle" href="#" onclick='slider.prev()'><i class="icon-circle-arrow-left"></i></a>
+  <a class="paddle next-paddle" href="#" onclick="slider.next()"><i class="icon-circle-arrow-right"></i></a>
+  <a class="paddle previous-paddle" href="#" onclick="slider.prev()"><i class="icon-circle-arrow-left"></i></a>
 </nav>
 
 <div id="slider" class="hidden-phone swipe">
@@ -42,11 +42,21 @@
       <div class="space container-fluid">
         <div class="row-fluid">
           <div class="span12 center">
-            <div class="hero-unit">
-              <p>I was in time a delphi software developer for windows applications but for now on I will be a guy trying to make some difference in the mobile world.</p>
-              <p>At this time I'm building my own website with bootstrap to embrace some web concepts and then I will learn the force of iOS.</p>
-              <p>Feel free to send me some tips, startup lessons, guru mystical daemonic valuable code ;)</p>
-              <p>However, you can always contact me if you need some help to adopt delphi language. I will upload some projects that I made into my github repository to show a bit of me and how I work.</p>
+            <div class="hero-unit text-center">
+              <h1>About me</h1>
+              <p class="muted"><strong>One-man</strong> developer</p><br>
+              <!--<p><i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star-empty"></i></p>-->
+              <p>Sou um programador de Coimbra com aptidões para desenvolver aplicações e páginas web à sua medida.</p>
+              <br>
+              <p>Contacte-me e em 24h terá o seu orçamento.</p>
+              <br>
+              <ul class="muted contacts">
+                <li><a href="mailto:ricardo.pereira.develop@gmail.com"><i class="icon-envelope-alt"></i></a></li>
+                <li><a href="https://twitter.com/rsantospereira" target="_blank"><i class="icon-twitter"></i></a></li>
+                <li><a href="https://plus.google.com/u/0/104605330611247811715" target="_blank"><i class="icon-google-plus"></i></a></li>
+                <li><a href="https://www.facebook.com/ricardopereira.eu" target="_blank"><i class="icon-facebook-sign"></i></a></li>
+                <li><a href="#" onclick="slider.slide(2,400)"><i class="icon-github"></i> </a></li>
+              </ul>
             </div>
           </div><!--/span-->
         </div><!--/row-->
@@ -54,6 +64,27 @@
     </div>
     <!-- DESKTOP C -->
     <div class="info">
+      <div class="space container-fluid">
+        <div class="row-fluid">
+          <div class="span12 center">
+            <div class="hero-unit">
+              <h1 class="text-center">Showcase</h1><br>
+              <blockquote>
+                <p><cite>APDIP</cite> - Associação Portuguesa de Doentes com Imunodeficiências Primárias</p>
+                <small>página web <a href="http://www.apdip.pt/" target="_blank">apdip.pt</a></small>
+              </blockquote>
+              <blockquote>
+                <p><cite>Restaurante Licínio</cite> - restaurante de sabores típicos da cozinha portuguesa</p>
+                <small>página web <a href="http://www.restaurantelicinio.com.pt/" target="_blank">restaurantelicinio.com.pt</a></small>
+              </blockquote>
+              <blockquote>
+                <p><cite>Morangos</cite> - creche e jardim de infância de Coimbra</p>
+                <small>aplicação de gestão de ementas <a href="">Moranguito v1.1</a></small>
+              </blockquote>
+            </div>
+          </div><!--/span-->
+        </div><!--/row-->
+      </div>
     </div>
   </div>
 </div>
