@@ -37,6 +37,11 @@ $(document).ready(function() {
     slider.slide(1,400);
     mslider.slide(2,400);
   }
+  else if (subpage == "about")
+  {
+    slider.slide(1,400);
+    mslider.slide(1,400);
+  }
 });
 
 $(window).load(function() {
