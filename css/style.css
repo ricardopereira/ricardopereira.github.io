@@ -83,8 +83,8 @@ overflow: hidden;}
 {background-image: url(../img/cover.jpg);
 background-size: cover;}
 
-.info-mobile
-{background-position: -250px 0;}
+/*.info-mobile
+{background-position: -250px 0;}*/
 
 footer nav
 {margin-left: -26px;}
@@ -180,4 +180,4 @@ small a:hover
 @media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) { }
 
 /* Landscape phones and down */
-@media (max-width: 480px) { .info-mobile {background-position: 0} }
+@media (max-width: 480px) { }
