@@ -7,6 +7,14 @@ var slider = Swipe(document.getElementById('slider'),
         bullets[i].className = ' ';
       }
       bullets[pos].className = 'on';
+
+  $('footer').blurjs({
+    source: '.info',
+    draggable: false,
+    overlay: 'rgba(255,255,255,0.1)',
+    radius: 10
+  });
+
     }
   });
   
