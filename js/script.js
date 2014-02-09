@@ -7,16 +7,6 @@ var slider = Swipe(document.getElementById('slider'),
         bullets[i].className = ' ';
       }
       bullets[pos].className = 'on';
-
-      $('footer').blurjs({
-        source: '.info',
-        draggable: false,
-        overlay: 'rgba(255,255,255,0.1)',
-        radius: 20
-      });
-
-      $('footer').css('display', 'none').height();
-      $('footer').css('display', 'block');
     }
   });
   
@@ -40,6 +30,13 @@ var args = window.location.search;
 var subpage = args.substring(1);
 
 $(document).ready(function() {
+  $('header').blurjs({
+    source: '.info',
+    draggable: false,
+    overlay: 'rgba(255,255,255,0.1)',
+    radius: 20
+  });
+
   $('footer').blurjs({
     source: '.info',
     draggable: false,
