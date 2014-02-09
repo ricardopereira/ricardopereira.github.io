@@ -77,6 +77,7 @@ bottom: 0;
 width: 100%;
 color: #2b2e30;
 background-color: #191919;
+/*background-color: rgba(25,25,25,0.5);*/
 overflow: hidden;}
 
 .info, .info-mobile
@@ -146,7 +147,7 @@ right: 30px;}
 {margin: 60px 100px 10px 100px}
 
 .space-mobile
-{margin: 0px 10px 10px 10px}
+{margin: 0 10px 10px 10px}
 
 .contacts
 {text-align: center;

@@ -26,10 +26,17 @@ var mslider = Swipe(document.getElementById('slider-mobile'),
 
 var mbullets = document.getElementById('position-mobile').getElementsByTagName('li');
 
-var arguments = window.location.search;
-var subpage = arguments.substring(1);
+var args = window.location.search;
+var subpage = args.substring(1);
 
-$(document).ready(function() { 
+$(document).ready(function() {
+  $('footer').blurjs({
+    source: '.info',
+    draggable: false,
+    overlay: 'rgba(255,255,255,0.1)',
+    radius: 10
+  });
+
   $('.logo').delay(1000).fadeIn('slow');
   
   if (subpage == "contacts")
