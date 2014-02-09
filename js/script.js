@@ -8,13 +8,15 @@ var slider = Swipe(document.getElementById('slider'),
       }
       bullets[pos].className = 'on';
 
-  $('footer').blurjs({
-    source: '.info',
-    draggable: false,
-    overlay: 'rgba(255,255,255,0.1)',
-    radius: 10
-  });
+      $('footer').blurjs({
+        source: '.info',
+        draggable: false,
+        overlay: 'rgba(255,255,255,0.1)',
+        radius: 20
+      });
 
+      $('footer').css('display', 'none').height();
+      $('footer').css('display', 'block');
     }
   });
   
@@ -42,7 +44,7 @@ $(document).ready(function() {
     source: '.info',
     draggable: false,
     overlay: 'rgba(255,255,255,0.1)',
-    radius: 10
+    radius: 20
   });
 
   $('.logo').delay(1000).fadeIn('slow');
