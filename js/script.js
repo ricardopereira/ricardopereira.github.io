@@ -30,20 +30,6 @@ var args = window.location.search;
 var subpage = args.substring(1);
 
 $(document).ready(function() {
-  $('header').blurjs({
-    source: '.info',
-    draggable: false,
-    overlay: 'rgba(255,255,255,0.1)',
-    radius: 20
-  });
-
-  $('footer').blurjs({
-    source: '.info',
-    draggable: false,
-    overlay: 'rgba(255,255,255,0.1)',
-    radius: 20
-  });
-
   $('.logo').delay(1000).fadeIn('slow');
   
   if (subpage == "contacts")
