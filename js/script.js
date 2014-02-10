@@ -37,16 +37,27 @@ $('.info').mousewheel(function(event) {
       slider.prev();
       setTimeout(function() {
         sliding = 0;
-      },700);
+      },750);
     }
     else if (event.deltaX > 6) {
       sliding=1;
       slider.next();
       setTimeout(function() {
         sliding = 0;
-      },700);
+      },750);
     }
 });
+
+document.onkeydown = function() {
+    switch (window.event.keyCode) {
+        case 37:
+            slider.prev();
+            break;
+        case 39:
+            slider.next();
+            break;
+    }
+};
 
 $(document).ready(function() {
   $('.logo').delay(1000).fadeIn('slow');
