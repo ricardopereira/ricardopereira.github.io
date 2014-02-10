@@ -75,7 +75,7 @@ $(document).ready(function() {
   else if (subpage == "calculate")
   {
     slider.slide(2,400);
-    mslider.slide(3,400);
+    mslider.slide(5,400);
   }
 });
 
