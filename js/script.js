@@ -1,7 +1,9 @@
+var sliding=0;
+
 var slider = Swipe(document.getElementById('slider'),
   {
+    continuous: false,
     callback: function(pos) {
-      
       var i = bullets.length;
       while (i--) {
         bullets[i].className = ' ';
@@ -15,7 +17,6 @@ var bullets = document.getElementById('position').getElementsByTagName('li');
 var mslider = Swipe(document.getElementById('slider-mobile'),
   {
     callback: function(pos) {
-    
       var i = mbullets.length;
       while (i--) {
         mbullets[i].className = ' ';
@@ -29,6 +30,24 @@ var mbullets = document.getElementById('position-mobile').getElementsByTagName('
 var args = window.location.search;
 var subpage = args.substring(1);
 
+$('.info').mousewheel(function(event) {
+    if (sliding == 1) return;
+    if (event.deltaX < -6) {
+      sliding=1;
+      slider.prev();
+      setTimeout(function() {
+        sliding = 0;
+      },700);
+    }
+    else if (event.deltaX > 6) {
+      sliding=1;
+      slider.next();
+      setTimeout(function() {
+        sliding = 0;
+      },700);
+    }
+});
+
 $(document).ready(function() {
   $('.logo').delay(1000).fadeIn('slow');
   
@@ -41,6 +60,11 @@ $(document).ready(function() {
   {
     slider.slide(1,400);
     mslider.slide(1,400);
+  }
+  else if (subpage == "calculate")
+  {
+    slider.slide(2,400);
+    mslider.slide(3,400);
   }
 });
 
