@@ -82,3 +82,6 @@ $(document).ready(function() {
 $(window).load(function() {
   console.log("Window loaded");
 });
+
+function next() {}
+function prev() {}

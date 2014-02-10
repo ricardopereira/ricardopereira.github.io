@@ -44,8 +44,8 @@
 <header class="visible-phone header-mobile">Ricardo <a class="headlogo" href="http://ricardopereira.github.com"><i class="rp-RicardoPereira"></i></a> Pereira</header>
 
 <nav class="visible-desktop">
-  <a class="paddle next-paddle" href="#" onclick="slider.next()"><i class="icon-circle-arrow-right"></i></a>
-  <a class="paddle previous-paddle" href="#" onclick="slider.prev()"><i class="icon-circle-arrow-left"></i></a>
+  <a class="paddle next-paddle" href="javascript:next();" onclick="slider.next()"><i class="icon-circle-arrow-right"></i></a>
+  <a class="paddle previous-paddle" href="javascript:prev();" onclick="slider.prev()"><i class="icon-circle-arrow-left"></i></a>
 </nav>
 
 <div id="slider" class="hidden-phone swipe">
@@ -193,11 +193,11 @@
 <footer class="credit">
   <nav class="hidden-phone">
     <ul id="position">
-      <li class="on"></li>
-      <li class=" "></li>
-      <li class=" "></li>
-      <li class=" "></li>
-      <li class=" "></li>
+      <li class="on" onclick="slider.slide(0,400);" style="cursor: pointer;"></li>
+      <li class=" " onclick="slider.slide(1,400);" style="cursor: pointer;"></li>
+      <li class=" " onclick="slider.slide(2,400);" style="cursor: pointer;"></li>
+      <li class=" " onclick="slider.slide(3,400);" style="cursor: pointer;"></li>
+      <li class=" " onclick="slider.slide(4,400);" style="cursor: pointer;"></li>
     </ul>
   </nav>
   <nav class="visible-phone">
