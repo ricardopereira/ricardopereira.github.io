@@ -32,14 +32,14 @@ var subpage = args.substring(1);
 
 $('.info').mousewheel(function(event) {
     if (sliding == 1) return;
-    if (event.deltaX < -6) {
+    if (event.deltaY < -40) {
       sliding=1;
       slider.prev();
       setTimeout(function() {
         sliding = 0;
       },750);
     }
-    else if (event.deltaX > 6) {
+    else if (event.deltaY > 40) {
       sliding=1;
       slider.next();
       setTimeout(function() {
