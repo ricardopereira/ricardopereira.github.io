@@ -112,9 +112,9 @@ a:link
 top: 50%;
 margin-top: -35px;
 z-index: 3;
-opacity: 0.2;
+opacity: 0.4;
 font-size: 70px;
-color: #191919;
+color: #fff;
 text-decoration: none;
 -webkit-transition: opacity 800ms cubic-bezier(0.51, 0.01, 0.37, 0.98);
 -moz-transition: opacity 800ms cubic-bezier(0.51, 0.01, 0.37, 0.98);
