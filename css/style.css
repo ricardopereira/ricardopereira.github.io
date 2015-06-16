@@ -24,7 +24,7 @@ main {
 header {
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 8px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   text-align: center;
   margin-top: 20px;
@@ -94,9 +94,6 @@ footer a:hover {
 footer a:hover {
   color: #383E50;
 }
-
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
 
 @media (max-width: 767px) {
   body {
