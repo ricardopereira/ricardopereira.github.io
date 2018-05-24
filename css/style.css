@@ -69,11 +69,11 @@ article {
 article a,
 article a:hover {
   text-decoration: none;
-  color: #BA876E;
+  color: #383E50;
 }
 
 article a:hover {
-  color: #383E50;
+  color: #FFF;
 }
 
 footer {
@@ -86,7 +86,6 @@ footer {
 
 footer a,
 footer a:hover {
-  text-transform: uppercase;
   text-decoration: none;
   color: #BA876E;
 }
