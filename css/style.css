@@ -3,8 +3,6 @@
 }
 
 body {
-  background-image: url(../img/cover.jpg);
-  background-repeat: no-repeat;
   background-color: #000;
   background-size: auto;
   font-family: 'Maven Pro', sans-serif;
@@ -38,7 +36,7 @@ header a,
 header a:active,
 header a:hover {
   text-decoration: none;
-  color: white;
+  color: #810cff;
 }
 
 social p {
@@ -51,11 +49,11 @@ social p {
 
 social a {
   text-decoration: underline;
-  color: #383E50;
+  color: #810cff;
 }
 
 social a:hover {
-  color: #BA876E;
+  color: #ffa772;
 }
 
 article {
@@ -69,11 +67,11 @@ article {
 article a,
 article a:hover {
   text-decoration: none;
-  color: #383E50;
+  color: #810cff;
 }
 
 article a:hover {
-  color: #FFF;
+  color: #ffa772;
 }
 
 footer {
@@ -81,22 +79,21 @@ footer {
   font-weight: 700;
   text-align: center;
   margin-bottom: 50px;
-  color: #383E50;
+  color: #810cff;
 }
 
 footer a,
 footer a:hover {
   text-decoration: none;
-  color: #BA876E;
+  color: #810cff;
 }
 
 footer a:hover {
-  color: #383E50;
+  color: #ffa772;
 }
 
 @media (max-width: 767px) {
   body {
-    background-image: url(../img/cover-small.jpg);
   }
 
   article {
